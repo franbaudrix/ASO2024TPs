@@ -25,4 +25,6 @@
 	RTA: Los tiempos de ejecucion no son iguales, en el archivo sinhilos.py su promedio es mas bajo, mientras que en el archivo conhilos.py el mio es mas bajo.
    
 
-     c)  
+     c) El tiempo de ejecucion con las lineas comentadas es, en promedio, 0.045 segundos. Por otro aldo, sin esas lineas comentadas este  aumenta significativamente, alcanzando un promedio de 11.23 segundos aproximadamente.
+	Esto se debe a que al quitar los comentarios, los bucles for relantiza la ejecucion de los threads, por lo que se sobrecarga el procesador ya que se suman iteraciones que colisionan con ellos. 
+  
