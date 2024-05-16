@@ -26,5 +26,9 @@
    
 
      c) El tiempo de ejecucion con las lineas comentadas es, en promedio, 0.045 segundos. Por otro aldo, sin esas lineas comentadas este  aumenta significativamente, alcanzando un promedio de 11.23 segundos aproximadamente.
-	Esto se debe a que al quitar los comentarios, los bucles for relantiza la ejecucion de los threads, por lo que se sobrecarga el procesador ya que se suman iteraciones que colisionan con ellos. 
+	Esto se debe a que al quitar los comentarios, los bucles for relantizan la ejecucion de los threads, por lo que se sobrecarga el procesador ya que se suman iteraciones que colisionan con ellos, lo cual produce que el planificador de tareas tenga mas dificultades para dividir la suma y la resta. Como resultado, el acumulador, que generalmente seria 0, puede terminar siendo cualquier otro numero mucho mayor. 
   
+2) 
+     a) 
+
+     b) link foto
