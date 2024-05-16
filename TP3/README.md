@@ -29,6 +29,6 @@
 	Esto se debe a que al quitar los comentarios, los bucles for relantizan la ejecucion de los threads, por lo que se sobrecarga el procesador ya que se suman iteraciones que colisionan con ellos, lo cual produce que el planificador de tareas tenga mas dificultades para dividir la suma y la resta. Como resultado, el acumulador, que generalmente seria 0, puede terminar siendo cualquier otro numero mucho mayor. 
   
 2) 
-     a) 
+     a) https://github.com/franbaudrix/ASO2024TPs/blob/master/TP3/filesTP3/con_race_condition.c
 
-     b) link foto
+     b) https://github.com/franbaudrix/ASO2024TPs/blob/master/TP3/filesTP3/flujo.png
