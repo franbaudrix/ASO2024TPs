@@ -1,3 +1,4 @@
+```console
 1) 
    a) EL tiempo de ejecucion es relativamente predecible. SI tenemos en cuenta solamente los segundos, estos siempre son iguales en ambos codigos. Sin embargo, si tenemos en cuenta los decimales, ya no es tan predecible, ya que varia bastante respecto de cada ejecucion.
    
