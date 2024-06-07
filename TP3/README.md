@@ -27,7 +27,7 @@
    
 
      c) El tiempo de ejecucion con las lineas comentadas es, en promedio, 0.045 segundos. Por otro aldo, sin esas lineas comentadas este  aumenta significativamente, alcanzando un promedio de 11.23 segundos aproximadamente.
-	Esto se debe a que al quitar los comentarios, los bucles for relantizan la ejecucion de los threads, por lo que se sobrecarga el procesador ya que se suman iteraciones que colisionan con ellos, lo cual produce que el planificador de tareas tenga mas dificultades para dividir la suma y la resta. Como resultado, el acumulador, que generalmente seria 0, puede terminar siendo cualquier otro numero mucho mayor. 
+Esto es producido porque al quitar los comentarios, los for loops relantizan la ejecucion de los threads, por lo que se sobrecarga el procesador ya que se suman iteraciones que colisionan con ellos, generando en cierto punto una race condition. La dificultad en el planificador de tareas para dividir la suma y la resta surge cuando los threads utilizan una misma variable global (acumulador), convirtiéndola en una zona crítica entre ambos. Como resultado, el acumulador, que generalmente sería 0, puede terminar siendo cualquier otro número mucho mayor, generando asi una race condition. Este fenomeno ocurre con el codigo comentado o no, pero comentado es menos ocurrente.
   
 2) 
      a) https://github.com/franbaudrix/ASO2024TPs/blob/master/TP3/filesTP3/con_race_condition.c
