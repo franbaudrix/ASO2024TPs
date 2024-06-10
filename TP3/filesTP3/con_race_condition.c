@@ -11,7 +11,7 @@ void *comer_hamburguesa(void *tid)
 {
 	while (1 == 1)
 	{ 
-		while(turno!=(int)tid);
+			while(turno!=(int)tid);
 			// INICIO DE LA ZONA CRÍTICA
 			if (cantidad_restante_hamburguesas > 0)
 			{
